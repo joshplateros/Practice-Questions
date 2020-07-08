@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+
+std::vector<int> shuffleArray (std::vector<int> & nums, int n);
+
+int main()
+{
+	std::vector<int> nums;
+	nums.push_back(2);
+	nums.push_back(4);
+	nums.push_back(3);
+	nums.push_back(6);
+	nums.push_back(1);
+	nums.push_back(9);
+	int n = 3;
+	shuffleArray(nums, n);	
+}
+
+std::vector<int> shuffleArray (std::vector<int> & nums, int n)
+{
+	}
