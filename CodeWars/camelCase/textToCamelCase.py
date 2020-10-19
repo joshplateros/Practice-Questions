@@ -1,5 +1,6 @@
 
 # www.codewars.com/kata/517abf86da9663f1d2000003/train/python
+import re
 
 def to_camel_case(text):
     splitted = []
@@ -11,11 +12,8 @@ def to_camel_case(text):
     if (len(text) == 0):
         return ''
 
-    # Not found
-    if (result < 0):
-        splitted = text.split("_")
-    else:
-        splitted = text.split('-')
+
+    splitted = re.split('[- _]', text)
     
     checkList = []   
     # Go over each word and each letter
